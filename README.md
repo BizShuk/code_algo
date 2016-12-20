@@ -5,47 +5,75 @@ AND, OR, XOR
 bit count('1')
 bit shift 
 signed integer : positive >> n = 0 , negative >> n = -1
+swap xor 
+```
+a = a ^ b
+b = a ^ b
+a = a ^ b
+```
 
+# Algo
+
+### BUD Optimizatoin ###
+- B = Bottleneck
+- U = Unnecessary work
+- D = duplicated work
+
+### list ###
+- BFS breadth-first search, push to queue and operate when dequeu
+- DFS Depth-first search, push to stack and operate when pop
+- Greedy
+- backtracking
+- sorting , 
+    - [Bubble sort](algo/sort/bubble_sort.go) , 
+    - [Insertion sort](algo/sort/insertion_sort.go) , 
+    - [Quick sort](algo/sort/quick_sort.go) , 
+    - [Selection sort](algo/sort/selection_sort.go) , 
+    - [Sort2Dcolumn](algo/sort/sort2Dcolumn.go)
+- Crypto
+    - [SummaryRange](compress/summaryRange.go)
+- Dynamic Programming
+    Kadane's Algorithm
+    - [MaxProfit multi transactions](dy/maxProfit_multi_transactions.go)
+    - [MaxProfit one transaction](dy/maxProfit_one_transaction.go)
+- Backtracking
+    - Combine elements , [bf](backtracking/combination_bf.go) , [recur](backtracking/combination_recur.go) ,  goroutine of recursive
+    - [Is valid parenthese](backtracking/valid_parenthese.go)
+    - [parenthese combine](backtracking/parenthese_combine.go)
+
+
+# DS 
+data structure
+- [x] [Linklist](linklist/) , single , double , circle , 
+- [ ] [Tree] 
+    - btree
+    - multiple tree 
+    - red-black tree
+    - full binary tree
+    - complete binary tree
+- [ ] [Stack] 
+- [ ] [Queue] 
+    - double-ended queue 
+    - priority queue
+- [ ] [heap]  
+- [ ] [map] 
+- [ ] [set] 
+- [ ] [hash]
+
+skills:
+- resource management
+- operation function
 
 
 
 ### Reference
 - [Top 7 Algo.](https://codingsec.net/2016/03/7-algorithms-data-structures-every-programmer/)
 - [Top 10 Algo](http://www.techbang.com/posts/18438-ruled-the-worlds-top-ten-algorithms)
-
-
 - [演算法筆記](http://www.csie.ntnu.edu.tw/~u91029/index.html)
 
 
 
-### Algorithm
-
-BUD Optimizatoin
-- B = Bottleneck
-- U = Unnecessary work
-- D = duplicated work
-
-- sorting , 
-    - [Bubble sort](sort/bubble_sort.go) , 
-    - [Insertion sort](sort/insertion_sort.go) , 
-    - [Quick sort](sort/quick_sort.go) , 
-    - [Selection sort](sort/selection_sort.go) , 
-    - [Sort2Dcolumn](sort/sort2Dcolumn.go)
-- compress , 
-    - [SummaryRange](compress/summaryRange.go)
-- dynamic programming
-    Kadane's Algorithm
-    - [MaxProfit multi transactions](dy/maxProfit_multi_transactions.go)
-    - [MaxProfit one transaction](dy/maxProfit_one_transaction.go)
-- Backtracka
-    - Combine elements , [bf](backtracking/combination_bf.go) , [recur](backtracking/combination_recur.go) ,  goroutine of recursive
-    - [Is valid parenthese](backtracking/valid_parenthese.go)
-    - [parenthese combine](backtracking/parenthese_combine.go)
-- Depth-first Search
-
-
-
-### list
+### Algorithm list
 - A\* search
 - short url
 - right-sided view b-tree
@@ -93,33 +121,8 @@ BUD Optimizatoin
 
 
 
-
-# DS 
-data structure
-- [x] [Linklist](linklist/) , single , double , circle , 
-- [ ] [Tree] 
-    - btree
-    - multiple tree 
-    - red-black tree
-    - full binary tree
-    - complete binary tree
-- [ ] [Stack] 
-- [ ] [Queue] 
-    - double-ended queue 
-    - priority queue
-- [ ] [heap]  
-- [ ] [map] 
-- [ ] [set] 
-- [ ] [hash]
-
-skills:
-- resource management
-- operation function
  
 
-
-### DS 應用
-- twoSum , [bf](twosum/twosum_bf.go) , [hash](twosum/twosum_onehash.go)
 
 
 
